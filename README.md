@@ -62,3 +62,33 @@ sudo npm install truffle-hdwallet-provider
 ```
 
 Install the [MetaMask browser extension](https://metamask.io/).
+
+## Useful truffle snippets
+
+Deploy contracts:
+```bash
+truffle migrate --reset
+```
+
+Test contracts:
+```bash
+truffle test
+```
+
+Obtain contract instance:
+```js
+recorder = Recorder.at(Recorder.address)
+```
+
+Call the record method with a message:
+```js
+recorder.record("i dont even")
+```
+
+Read all contract events:
+```js
+var filters = {}
+var options = {fromBlock: 0, toBlock: "latest"}
+var callback = (error,result) => (console.log(result.map((result) => (result.args._message))))
+recorder.Record(filters, options).get(callback)
+```
