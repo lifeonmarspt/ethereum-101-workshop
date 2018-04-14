@@ -17,7 +17,8 @@ You'll learn some core concepts of blockchain and Ethereum such as smart contrac
 1. Introduction
     1. Blockchain and the data structure
     1. Bitcoin and the incentive layer
-    1. Ethereum 101 and cryptoeconomics
+    1. Ethereum and the world computer
+    1. Dapps, cryptoeconomics and ICOs
 1. Hands-on
     1. What will we be building?
     1. Setup
