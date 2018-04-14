@@ -17,9 +17,9 @@ You'll learn some core concepts of blockchain and Ethereum such as smart contrac
 1. Introduction
     1. Blockchain and the data structure
     1. Bitcoin and the incentive layer
-    1. Ethereum and cryptoeconomics
-    1. Ethereum 101
-1. Hands-on 
+    1. Ethereum 101 and cryptoeconomics
+1. Hands-on
+    1. What will we be building?
     1. Setup
     1. The Recorder smart contract: overview and testing
         1. Contract code walkthrough
