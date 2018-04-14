@@ -179,3 +179,38 @@ var callback = (error,result) => (console.log(result.map((result) => (result.arg
 recorder.Record(filters, options).get(callback)
 ```
 
+## Browser console snippets
+
+Initializing web3 for Infura:
+```js
+var infuraHost = "https://ropsten.infura.io/API_KEY";
+var web3 = new Web3(new HDWalletProvider("seed words", host));
+```
+
+Initializing web3 for MetaMask:
+```js
+var web3 = new Web3(web3.currentProvider);
+```
+
+Obtaining a contract instance:
+```js
+var contractABI = JSON.parse('[ { "anonymous": false, "inputs": [ { "indexed": false, "name": "_from", "type": "address" }, { "indexed": false, "name": "_message", "type": "string" } ], "name": "Record", "type": "event" }, { "constant": false, "inputs": [ { "name": "message", "type": "string" } ], "name": "record", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" } ]');
+var contractAddress = "0x271a247f671eeeb21f7c1d53e46fdb87509e6936";
+var contract = new web3.eth.Contract(contractABI, contractAddress);
+```
+
+Writing to the contract:
+```js
+contract.methods.record(message).send({
+  from: "0x3543f41a7e75162434dbebf6c3592abbf3432f04",
+  gas: 100000,
+}, function(error, result){
+  console.log("error", error);
+  console.log("result", result);
+});
+```
+
+Reading contract events:
+```js
+contract.getPastEvents("Record", {fromBlock: 0, toBlock: "latest"}, console.log);
+```
