@@ -22,9 +22,19 @@ You'll learn some core concepts of blockchain and Ethereum such as smart contrac
 1. Hands-on 
     1. Setup
     1. The Recorder smart contract: overview and testing
+        1. Contract code walkthrough
+        1. Testing code walkthrough
     1. Ganache: Deploying to a local testnet
+        1. Setting up truffle and ganache
+        1. Deploying the contract and interacting with it
+        1. Running tests
     1. Infura: Deploying to the Ropsten testnet
+        1. Testnets
+        1. Block explorers
     1. MetaMask: Building a web interface
+        1. Web-based contract interaction
+        1. Setting up MetaMask and using a faucet
+        1. Building a simple web app using MetaMask
 
 ## Setup
 
