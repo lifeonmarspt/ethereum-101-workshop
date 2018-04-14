@@ -69,7 +69,7 @@ npm install -g ganache-cli
 Install [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).
 
 ```bash
-sudo npm install truffle-hdwallet-provider
+npm install truffle-hdwallet-provider
 ```
 
 Install the [MetaMask browser extension](https://metamask.io/).
