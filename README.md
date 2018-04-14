@@ -76,14 +76,14 @@ The smart contract is written in Solidity. This is a statically typed language t
 Let’s start by walking slowly through the code.
 
 ```solidity
-pragma solidity 0.4.18;
+pragma solidity 0.4.21;
 ```
 
 As per [the documentation](http://solidity.readthedocs.io/en/develop/layout-of-source-files.html#version-pragma):
 
 > Source files can (and should) be annotated with a so-called version pragma to reject being compiled with future compiler versions that might introduce incompatible changes.
 
-This line ensures that your source file won’t be compiled by a compiler with a version different from 0.4.18.
+This line ensures that your source file won’t be compiled by a compiler with a version different from 0.4.21.
 
 ```solidity
 contract Recorder {}
