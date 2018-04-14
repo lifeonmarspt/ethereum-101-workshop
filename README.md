@@ -129,7 +129,17 @@ It’s pretty simple as far as tests go:
 * we then write one message with `instance.record("pokemon")`
 * and finally, we ensure the message was written, with `assert.equal(1, events.length)`
 
-## Useful truffle snippets
+## Truffle instructions
+
+Initialize truffle:
+```bash
+truffle init
+```
+This will create a directory structure with truffle defaults and examples.
+* the config file stays in the root directory
+* smart contracts go into the `contracts` folder
+* migrations go into the `migrations` folder
+* tests go into the `tests` folders
 
 Deploy contracts:
 ```bash
