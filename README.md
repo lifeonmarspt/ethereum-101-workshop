@@ -75,7 +75,7 @@ Install the [MetaMask browser extension](https://metamask.io/).
 
 ## The Recorder smart contact
 
-[The Recorder smart contract](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/Solidity.sol) is as simple as they come. Its only functionality is to log a message into the blockchain. This is achieved through the use of Events, as explained below.
+[The Recorder smart contract](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/truffle/contracts/Recorder.sol) is as simple as they come. Its only functionality is to log a message into the blockchain. This is achieved through the use of Events, as explained below.
 
 ### Overview
 
@@ -129,7 +129,7 @@ Interaction with this particular smart contract is possible in only one way: sen
 
 ### Testing
 
-Truffle uses the [Mocha](https://mochajs.org/) testing framework, and [Chai](http://chaijs.com/) for assertions. We’ll be using [this test](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/recorder.js).
+Truffle uses the [Mocha](https://mochajs.org/) testing framework, and [Chai](http://chaijs.com/) for assertions. We’ll be using [this test](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/truffle/tests/recorder.js).
 
 It’s pretty simple as far as tests go:
 
