@@ -67,7 +67,8 @@ Install the [MetaMask browser extension](https://metamask.io/).
 
 [The Recorder smart contract](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/Solidity.sol) is as simple as they come. Its only functionality is to log a message into the blockchain. This is achieved through the use of Events, as explained below.
 
-Code walkthrough
+### Overview
+
 The smart contract is written in Solidity. This is a statically typed language to write Ethereum smart contracts. From [the documentation](http://solidity.readthedocs.io/en/develop/index.html):
 
 > Solidity is a contract-oriented, high-level language whose syntax is similar to that of JavaScript and it is designed to target the Ethereum Virtual Machine (EVM).
@@ -115,6 +116,18 @@ The `record` method is as simple as they come. It takes a `string` argument name
 * `message` is just the argument record was invoked with.
 
 Interaction with this particular smart contract is possible in only one way: sending a transaction at it, along with a `message` parameter, which invokes the `record` method. When an account `A` invokes the `record` method, the `Record` event is called, which causes the tuple `{A's address, message}` to be stored in the respective transaction’s log.
+
+### Testing
+
+Truffle uses the [Mocha](https://mochajs.org/) testing framework, and [Chai](http://chaijs.com/) for assertions. We’ll be using [this test](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/recorder.js).
+
+It’s pretty simple as far as tests go:
+
+* `Recorder.deployed()` resolves when it gets a hold of the deployed `Recorder` instance
+* we use `instance.Record(...).get()` first, to get the list of messages written to it
+* we check that it has no messages, with `assert.equal(0, events.length)`
+* we then write one message with `instance.record("pokemon")`
+* and finally, we ensure the message was written, with `assert.equal(1, events.length)`
 
 ## Useful truffle snippets
 
