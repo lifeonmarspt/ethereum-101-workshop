@@ -1,6 +1,6 @@
 # Forever On The Chain — Ethereum 101
 
-**Writing, testing and deploying an Ethereum smart contract and its web interface**
+**Writing, testing and deploying an Ethereum smart contract and its web interface** Check out the [accompanying presentation](https://docs.google.com/presentation/d/1i08H03BBOoBBduW4LVA9dytz3lpfAduMFVMEzgPU0UI/edit#slide=id.g37008944db_0_97).
 
 ![](https://cdn-images-1.medium.com/max/2000/1*4GNg30Shnxd3JZysM75dFQ.jpeg)
 
