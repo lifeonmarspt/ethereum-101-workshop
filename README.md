@@ -74,7 +74,7 @@ npm install truffle-hdwallet-provider
 
 Install the [MetaMask browser extension](https://metamask.io/).
 
-## The Recorder smart contact
+## The Recorder smart contract
 
 [The Recorder smart contract](https://github.com/lifeonmarspt/ethereum-101-workshop/blob/master/truffle/contracts/Recorder.sol) is as simple as they come. Its only functionality is to log a message into the blockchain. This is achieved through the use of Events, as explained below.
 
