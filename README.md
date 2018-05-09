@@ -222,6 +222,7 @@ Shameless plug:
 * https://hackernoon.com/forever-on-the-chain-c755838dfc79
 * https://hackernoon.com/what-can-blockchain-do-for-you-746ed436a371
 * https://hackernoon.com/smart-contracts-a-new-economic-era-e95f407d49ef
+* https://hackernoon.com/getting-intimate-with-ethereum-tokens-2a1779c4db7b
 
 Non-technical:
 * https://hackernoon.com/cryptoeconomics-in-context-6435ad6839be
