@@ -1,4 +1,4 @@
-pragma solidity 0.4.21;
+pragma solidity 0.4.24;
 
 /**
  * @title Recorder — record a message into the blockchain
@@ -15,7 +15,7 @@ contract Recorder{
    * to record into the blockchain
    * @param message  message to record
    */
-  function record(string message) {
+  function record(string message) public {
     emit Record(msg.sender, message);
   }
 }
